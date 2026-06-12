@@ -170,7 +170,7 @@ export default function Footer() {
 
                 <div style={styles.contactLinks}>
                   <a
-                    href="https://mail.google.com/mail/?view=cm&fs=1&to=satheshrikrishna14@gmail.com"
+                    href="mailto:satheshrikrishna14@gmail.com"
                     target="_blank"
                     rel="noreferrer"
                     style={{
@@ -218,7 +218,7 @@ export default function Footer() {
 
                 <div style={styles.contactLinks}>
                   <a
-                    href="https://mail.google.com/mail/?view=cm&fs=1&to=epadekar@gmail.com"
+                    href="mailto:epadekar@gmail.com"
                     target="_blank"
                     rel="noreferrer"
                     style={{
