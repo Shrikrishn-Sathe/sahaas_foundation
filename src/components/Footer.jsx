@@ -122,7 +122,7 @@ export default function Footer() {
 
                 <div style={styles.contactLinks}>
                   <a
-                    href="https://mail.google.com/mail/?view=cm&fs=1&to=sujalkhot2479@gmail.com"
+                   href="mailto:sujalkhot2479@gmail.com"
                     target="_blank"
                     rel="noreferrer"
                     style={{
