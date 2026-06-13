@@ -169,35 +169,33 @@ export default function Home() {
 
             <Reveal>
               <div
-                className="card"
                 style={{
-                  ...styles.splitCard,
-                  background: colors.cardBg,
-                  border: colors.cardBorder,
-                  boxShadow: colors.shadow,
+                  ...styles.splitBody,
+                  color: colors.text,
+                  display: "flex",
+                  flexDirection: "column",
+                  height: "100%",
                 }}
               >
-                <img
-                  src={IMAGES.home_program}
-                  alt="Founder of SAHAAS FOUNDATION"
-                  style={styles.splitImage}
-                  decoding="async"
-                  loading="lazy"
-                />
-                <div style={{ ...styles.splitBody, color: colors.text }}>
-                  <div className="badge">Programs</div>
-                  <div className="h3" style={{ color: colors.text }}>
-                    Skill Development & Sports
-                  </div>
-                  <p className="muted" style={{ color: colors.muted }}>
-                    Coordination, balance, strength and fun-based learning to
-                    build focus and confidence. Includes functional training,
-                    sports activities, group sessions.
-                  </p>
-                  <Link className="btn" to="/programs">
-                    Explore Programs
-                  </Link>
+                <div className="badge">Programs</div>
+              
+                <div className="h3" style={{ color: colors.text }}>
+                  Skill Development & Sports
                 </div>
+              
+                <p className="muted" style={{ color: colors.muted }}>
+                  Coordination, balance, strength and fun-based learning to
+                  build focus and confidence. Includes functional training,
+                  sports activities, group sessions.
+                </p>
+              
+                <Link
+                  className="btn"
+                  to="/programs"
+                  style={{ marginTop: "auto", alignSelf: "flex-start" }}
+                >
+                  Explore Programs
+                </Link>
               </div>
             </Reveal>
           </div>
