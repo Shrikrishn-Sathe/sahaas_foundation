@@ -111,91 +111,100 @@ export default function Home() {
                   loading="lazy"
                 />
                 <div style={{ ...styles.splitBody, color: colors.text }}>
-  <div className="badge">Founder</div>
+                  <div className="badge">Founder</div>
+                  <div className="h3" style={{ color: colors.text }}>
+                    Satish Kharade
+                  </div>
+                  <p className="muted" style={{ color: colors.muted }}>
+                    Programs focus on physical development, mental growth and
+                    confidence through structured exercises and activities.
+                  </p>
 
-  <div className="h3" style={{ color: colors.text }}>
-    Satish Kharade
-  </div>
+                  <div
+                    style={{
+                      marginBottom: "16px",
+                      fontSize: "14px",
+                      lineHeight: "1.6",
+                      color: colors.text,
+                      wordBreak: "break-word",
+                    }}
+                  >
+                    <div>
+                      <strong> WhatsApp : </strong>{" "}
+                      <a
+                        href="tel:7057123216"
+                        style={{ color: "inherit", textDecoration: "none" }}
+                      >
+                        7057123216
+                      </a>
+                      <br />
+                      <a
+                        href="tel:9975674182"
+                        style={{ color: "inherit", textDecoration: "none" }}
+                      >
+                        9975674182
+                      </a>
+                    </div>
 
-  <p
-    className="muted"
-    style={{
-      color: colors.muted,
-      lineHeight: "1.7",
-      marginBottom: "16px",
-    }}
-  >
-    Programs focus on physical development, mental growth and
-    confidence through structured exercises and activities.
-  </p>
 
-  <div
-    style={{
-      display: "flex",
-      flexDirection: "column",
-      gap: "8px",
-      marginBottom: "18px",
-      fontSize: "15px",
-    }}
-  >
-    <div>
-      <strong>WhatsApp:</strong>{" "}
-      <a href="tel:7057123216">7057123216</a>
-    </div>
 
-    <div>
-      <strong>WhatsApp:</strong>{" "}
-      <a href="tel:9975674182">9975674182</a>
-    </div>
+                    <div>
+                      <strong>Email:</strong>{" "}
+                      <a
+                        href="mailto=khardes2512@gmail.com"
+                        style={{
+                          color: "inherit",
+                          textDecoration: "none",
+                          wordBreak: "break-word",
+                        }}
+                      >
+                        khardes2512@gmail.com
+                      </a>
+                    </div>
+                  </div>
 
-    <div
-      style={{
-        wordBreak: "break-word",
-        overflowWrap: "break-word",
-      }}
-    >
-      <strong>Email:</strong>{" "}
-      <a href="mailto:khardes2512@gmail.com">
-        khardes2512@gmail.com
-      </a>
-    </div>
-  </div>
-
-  <Link className="btn btnPrimary" to="/about">
-    Know More
-  </Link>
-</div>
+                  <Link
+                    className="btn btnPrimary"
+                    to="/about"
+                    style={{ marginTop: "auto" }}
+                  >
+                    Know More
+                  </Link>
+                </div>
+              </div>
             </Reveal>
 
             <Reveal>
               <div
+                className="card"
                 style={{
-                  ...styles.splitBody,
-                  color: colors.text,
-                  display: "flex",
-                  flexDirection: "column",
-                  height: "100%",
+                  ...styles.splitCard,
+                  background: colors.cardBg,
+                  border: colors.cardBorder,
+                  boxShadow: colors.shadow,
                 }}
               >
-                <div className="badge">Programs</div>
-              
-                <div className="h3" style={{ color: colors.text }}>
-                  Skill Development & Sports
+                <img
+                  src={IMAGES.home_program}
+                  alt="Founder of SAHAAS FOUNDATION"
+                  style={styles.splitImage}
+                  decoding="async"
+                  loading="lazy"
+                />
+                <div style={{ ...styles.splitBody, color: colors.text }}>
+                  <div className="badge">Programs</div>
+                  <div className="h3" style={{ color: colors.text }}>
+                    Skill Development & Sports
+                  </div>
+                  <p className="muted" style={{ color: colors.muted }}>
+                    Coordination, balance, strength and fun-based learning to
+                    build focus and confidence. Includes functional training,
+                    sports activities, group sessions.
+                  </p>
+                  <Link className="btn" to="/programs">
+                    Explore Programs
+                  </Link>
                 </div>
-              
-                <p className="muted" style={{ color: colors.muted }}>
-                  Coordination, balance, strength and fun-based learning to
-                  build focus and confidence. Includes functional training,
-                  sports activities, group sessions.
-                </p>
-              
-                <Link
-                  className="btn"
-                  to="/programs"
-                  style={{ marginTop: "auto", alignSelf: "flex-start" }}
-                >
-                  Explore Programs
-                </Link>
               </div>
             </Reveal>
           </div>
@@ -271,5 +280,9 @@ const styles = {
     height: "100%",
     objectFit: "cover",
   },
-  splitBody: { padding: 16 },
+  splitBody: {
+    padding: 16,
+    display: "flex",
+    flexDirection: "column",
+  },
 };
