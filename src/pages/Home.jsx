@@ -111,29 +111,60 @@ export default function Home() {
                   loading="lazy"
                 />
                 <div style={{ ...styles.splitBody, color: colors.text }}>
-                  <div className="badge">Founder</div>
-                  <div className="h3" style={{ color: colors.text }}>
-                    Satish Kharade
-                  </div>
-                 <p className="muted" style={{ color: colors.muted }}>
-  Programs focus on physical development, mental growth and
-  confidence through structured exercises and activities.
-  <br />
-  <br />
-  <strong>WhatsApp:</strong>{" "}
-  <a href="tel:7057123216">7057123216</a>,{" "}
-  <a href="tel:9975674182">9975674182</a>
-  <br />
-  <strong>Email:</strong>{" "}
-  <a href="mailto:khardes2512@gmail.com">
-    khardes2512@gmail.com
-  </a>
-</p>
-                  <Link className="btn btnPrimary" to="/about">
-                    Know More
-                  </Link>
-                </div>
-              </div>
+  <div className="badge">Founder</div>
+
+  <div className="h3" style={{ color: colors.text }}>
+    Satish Kharade
+  </div>
+
+  <p
+    className="muted"
+    style={{
+      color: colors.muted,
+      lineHeight: "1.7",
+      marginBottom: "16px",
+    }}
+  >
+    Programs focus on physical development, mental growth and
+    confidence through structured exercises and activities.
+  </p>
+
+  <div
+    style={{
+      display: "flex",
+      flexDirection: "column",
+      gap: "8px",
+      marginBottom: "18px",
+      fontSize: "15px",
+    }}
+  >
+    <div>
+      <strong>WhatsApp:</strong>{" "}
+      <a href="tel:7057123216">7057123216</a>
+    </div>
+
+    <div>
+      <strong>WhatsApp:</strong>{" "}
+      <a href="tel:9975674182">9975674182</a>
+    </div>
+
+    <div
+      style={{
+        wordBreak: "break-word",
+        overflowWrap: "break-word",
+      }}
+    >
+      <strong>Email:</strong>{" "}
+      <a href="mailto:khardes2512@gmail.com">
+        khardes2512@gmail.com
+      </a>
+    </div>
+  </div>
+
+  <Link className="btn btnPrimary" to="/about">
+    Know More
+  </Link>
+</div>
             </Reveal>
 
             <Reveal>
