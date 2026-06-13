@@ -115,10 +115,20 @@ export default function Home() {
                   <div className="h3" style={{ color: colors.text }}>
                     Satish Kharade
                   </div>
-                  <p className="muted" style={{ color: colors.muted }}>
-                    Programs focus on physical development, mental growth and
-                    confidence through structured exercises and activities.
-                  </p>
+                 <p className="muted" style={{ color: colors.muted }}>
+  Programs focus on physical development, mental growth and
+  confidence through structured exercises and activities.
+  <br />
+  <br />
+  <strong>WhatsApp:</strong>{" "}
+  <a href="tel:7057123216">7057123216</a>,{" "}
+  <a href="tel:9975674182">9975674182</a>
+  <br />
+  <strong>Email:</strong>{" "}
+  <a href="mailto:khardes2512@gmail.com">
+    khardes2512@gmail.com
+  </a>
+</p>
                   <Link className="btn btnPrimary" to="/about">
                     Know More
                   </Link>
